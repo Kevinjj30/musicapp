@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import navbar from '.components/navbar'
+import NavBar from './components/NavBar';
+import Dashboard from './components/dashboard';
+import SignIn from './components/SignIn';
 
 
 class App extends Component {
@@ -15,13 +17,32 @@ class App extends Component {
 		this.setState({ loggedIn: !this.state.loggedIn })
 	}
 
+
+
+
+
+
+
+
 	render() {
 		return (
-			<div id="container">
-				<header>
-					<navbar/>
-				</header>
 
+			
+			<div id="container">
+				
+
+			<section className="dashboard trim gutter">
+				{ this.state.loggedIn && (
+						<NavBar /> 
+					)}
+					{ this.state.loggedIn && (
+						<Dashboard /> 
+					)}
+					{ !this.state.loggedIn && (
+						<SignIn signIn={this.toggleSignIn} />
+					)}
+				</section>
+				
 			</div>
 		)
 	}
