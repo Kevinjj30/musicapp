@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Button, TextField, Typography, Grid } from '@material-ui/core';
 
 const SignIn = props => (
-	<div className="sign-container">
+	<div>
 		<AppBar position="static">
 			<Typography>My Music App</Typography>
 		</AppBar>
@@ -12,11 +12,11 @@ const SignIn = props => (
   justify="space-between"
   alignItems="center"
 >
-		<form className="sign-form">
+		<form >
 			<TextField
 				variant="outlined"
 				margin="normal"
-				//required
+				
 				fullWidth
 				id="email"
 				label="Email Address"
@@ -27,8 +27,7 @@ const SignIn = props => (
 			<TextField 
 				variant="outlined"
 				margin="normal"
-				//required
-				fullWidth
+		        fullWidth
 				name="password"
 				label="Password"
 				type="password"
@@ -36,7 +35,7 @@ const SignIn = props => (
 				autoComplete="current-password"
 			/>
 			<Button
-				//type="submit"
+				
 				fullWidth
 				variant="contained"
 				color="primary"

@@ -3,7 +3,7 @@ import { FormControlLabel, FormGroup, Switch, } from '@material-ui/core';
 
 const Online = props => (
 
-	<div className="online-switch">
+	<div>
 		<h4>Online Mode</h4>
 		<h6>Is this application connected to the internet?</h6>
 		<div className="m-t">
