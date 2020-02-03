@@ -7,32 +7,6 @@ import { Grid } from '@material-ui/core';
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class App extends Component {
 	constructor(props) {
 		super(props);
