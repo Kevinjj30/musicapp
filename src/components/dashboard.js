@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import OnlineSwitch from './online';
 import VolumeSlider from './volume';
 import SoundQuality from './soundquality';
-import { Container, Paper, Chip, Typography } from '@material-ui/core';
+import { Container, Paper, Chip, Typography, Card} from '@material-ui/core';
 import { Grid } from '@material-ui/core';
+
+
 
 class Dashboard extends Component {
 
@@ -16,6 +18,9 @@ class Dashboard extends Component {
 			quality: 'normal',
 		};
 	}
+
+
+	
 
 	// this recives a string and adds or removes it based on if it is in the notifications array
 	toggleNotification = ( msg) => {
@@ -87,7 +92,33 @@ class Dashboard extends Component {
 	}
 
 
+	
+
+	
+
+
+
 	render() {
+
+
+
+		
+		var cardStyle = {
+			display: 'flex',
+			width: '20vw',
+			transitionDuration: '0.3s',
+			height: '15vw',
+			border: '1px solid black',
+			outlinestyle: 'solid',
+			outlinecolor: 'red'
+
+		}
+		  
+
+
+		
+		
+		  
 
 		return (
 	
@@ -99,25 +130,51 @@ class Dashboard extends Component {
            <div className="dashboard-row">
 					
 					<div className="dashboard-col">
+
+                         <Card elevation ={3} style={cardStyle} variant="outlined">
+						 <Grid container
+                            direction="row"
+                             justify="center"
+                             alignItems="center"
+                                >
 						<OnlineSwitch
 							onlineState={this.state.online}
 							onlineFunc={this.toggleOnline}>
 						</OnlineSwitch>
+						</Grid>
+						</Card>
 					</div>
 				
 
 					<div className="dashboard-col">
+
+					<Card style={cardStyle} variant="outlined">
+						<Grid container
+  direction="row"
+  justify="center"
+  alignItems="center"
+>
 						<VolumeSlider
 							volumeState={this.state.volume}
 							volumeFunc={this.volumeSlider}>
 						</VolumeSlider>
+						</Grid>
+						</Card>
 					</div>
 
 					<div className="dashboard-col">
+					<Card style={cardStyle} variant="outlined">
+					<Grid container
+  direction="row"
+  justify="center"
+  alignItems="center"
+>
 						<SoundQuality 
 							qualityState={this.state.quality} 
 							qualityFunc={this.soundQuality}>	
 						</SoundQuality>
+						</Grid>
+						</Card>
 					</div>
 
 				

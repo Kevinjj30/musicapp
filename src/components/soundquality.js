@@ -2,10 +2,12 @@ import React from 'react';
 import { FormControl, MenuItem, Select, } from '@material-ui/core';
 
 
+
+
 const SoundQuality = props => (
 
 	<div className="quality-selection">
-		<h4>Sound Quality</h4>
+		<h2>Sound Quality</h2>
 		<h6>Manually</h6>
 		<div className="m-t">
 			<FormControl>

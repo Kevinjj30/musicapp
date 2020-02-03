@@ -18,14 +18,16 @@ justify-content: space-between;
 	min-width: 10rem;
 	margin: 1rem;
 	padding: 8rem;
-	box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
-	background-color: rgb(77, 113, 224);
-	border: 1px solid black;
-	outline-style: solid;
-	outline-color: black;
+
 }
 
 
 .notifications{
 	color:darkred;
+}
+
+.cardf{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

@@ -28,8 +28,9 @@ export default class VolumeSlider extends Component {
 	render() { return (
 		<div className="volume-slider">
 			<Typography id="discrete-slider" gutterBottom>
-				Volume
+				<h2>Master Volume</h2>
 			</Typography>
+			<h6>Overwrites all other sound settings in this application</h6>
 			<Slider
 				defaultValue={this.state.volume}
 				aria-labelledby="discrete-slider"
