@@ -1,8 +1,36 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/navbar';
 import Dashboard from './components/dashboard';
 import SignIn from './components/SignIn';
+import { Grid } from '@material-ui/core';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class App extends Component {
@@ -29,21 +57,27 @@ class App extends Component {
 
 			
 			<div id="container">
-				
+	
 
 			<section className="dashboard trim gutter">
 				{ this.state.loggedIn && (
-						<NavBar /> 
+						<NavBar/> 
 					)}
+					
 					{ this.state.loggedIn && (
+						
 						<Dashboard /> 
+						
 					)}
+					
 					{ !this.state.loggedIn && (
 						<SignIn signIn={this.toggleSignIn} />
 					)}
 				</section>
 				
+				
 			</div>
+			
 		)
 	}
 }

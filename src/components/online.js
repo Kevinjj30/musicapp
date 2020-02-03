@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormControlLabel, FormGroup, Switch, } from '@material-ui/core';
 
-const Online = props => (
+const OnlineSwitch = props => (
 
 	<div>
 		<h4>Online Mode</h4>
@@ -22,4 +22,4 @@ const Online = props => (
 
 )
 
-export default Online;
+export default OnlineSwitch;

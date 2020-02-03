@@ -1,3 +1,27 @@
-body{
-    width:100%;
+
+.dashboard-wrapper{
+height:100%;
+
+
+
+}
+
+.dashboard-row {
+	display: flex;
+	flex-flow: row wrap;
+	margin: -1rem;
+}
+.dashboard-col {
+	flex: 1;
+	min-width: 10rem;
+	margin: 1rem;
+	padding: 8rem;
+	box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+	background-color: cadetblue;
+}
+
+
+.notifications{
+	color:darkred;
+
 }

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -20,32 +19,8 @@ export default class MasterVolumeCard extends Component {
     }
   }
   
-  useStyles = makeStyles(theme => ({
-    card: {
-      minWidth: 250,
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontSize: 12,
-    },
-    pos: {
-      marginBottom: 12,
-    },
-    root: {
-      width: 300,
-    },
-    margin: {
-      height: theme.spacing(3),
-    },
-  }));
 
-  classes = () => this.useStyles;
-  
-  muteVolume = (value, event) => {
+muteVolume = (value, event) => {
     let newMute = !this.state.mute
     this.setState({
       mute: newMute,
